@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  renderTweets(data);
+});
+
 const data = [
   {
     user: {
@@ -23,8 +27,6 @@ const data = [
     created_at: 1461113959088,
   },
 ];
-
-let tweetsForDisplay = $('<section id="tweets-container"></section>');
 
 const createTweetElement = function (tweet) {
   let $tweet = `<article>
@@ -58,13 +60,10 @@ const createTweetElement = function (tweet) {
 };
 
 const renderTweets = function (tweets) {
+  let tweetsForDisplay = $("#tweets-container");
   for (const tweet of tweets) {
-    const element = createTweetElement(tweet);
-    tweetsForDisplay.append($(element));
+    let element = createTweetElement(tweet);
+    tweetsForDisplay.prepend(element);
+    console.log(tweetsForDisplay);
   }
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
 };
-console.log(tweetsForDisplay);
-
-renderTweets(data);

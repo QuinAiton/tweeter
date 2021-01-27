@@ -1,0 +1,40 @@
+#tweets-container article {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  margin: 1em;
+  padding: 0.5em;
+}
+#tweets-container .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em;
+}
+
+#tweets-container .header div {
+  display: flex;
+  align-items: center;
+}
+#tweets-container article:hover {
+  box-shadow: 1px 2px 4px 1px;
+  color: #000;
+}
+
+#tweets-container article header p {
+  border-style: none none solid none;
+  padding: 1em;
+}
+
+#tweets-container article footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+
+#tweets-container .header #username {
+  visibility: hidden;
+}
+
+#tweets-container article:hover #username {
+  visibility: visible;
+}

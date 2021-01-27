@@ -1,0 +1,46 @@
+.add-tweet h2 {
+  text-align: center;
+}
+.add-tweet form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-tweet form div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
+.add-tweet form textarea {
+  border: 5px solid black;
+  border-style: none none solid none;
+  background-color: #f8f1f1;
+  line-height: 1;
+}
+
+::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+.add-tweet form textarea:focus {
+  outline: none;
+}
+
+.add-tweet form button {
+  color: #fff;
+  background-color: #1a508b;
+  font-family: "Bungee", cursive;
+  margin-bottom: 2.5em;
+}
+.add-tweet form output {
+  font-family: "Bungee", cursive;
+}
+
+.add-tweet hr {
+  width: 30%;
+}
+
+.red {
+  color: red;
+}

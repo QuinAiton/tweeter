@@ -1,9 +1,3 @@
-const escape = function (str) {
-  let div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-};
-
 $(document).ready(function () {
   //ajax get request: rendering tweets from database.
   $(function () {
@@ -20,17 +14,11 @@ $(document).ready(function () {
       });
   });
 
-  //ajax post request: rendering newly sumitted tweet
+  //ajax post request: renders existing and new tweets to page
   $("form").on("submit", function (event) {
     const $newTweet = $("#tweet-text");
     event.preventDefault();
-
-    if ($newTweet.val().length > 139) {
-      return alert(
-        "Maximum text length reached. please shorten your tweet to a max of 140 characters"
-      );
-    }
-
+    if ($newTweet.val().length > 139) return;
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -53,8 +41,9 @@ $(document).ready(function () {
         console.log("error processing ajax post request");
         console.log(err);
       });
-
+    //reset values after post submit
     $newTweet.val("");
+    this.counter.value = 140;
   });
 });
 
@@ -97,4 +86,10 @@ const renderTweets = function (tweets) {
     let element = createTweetElement(tweet);
     tweetsForDisplay.prepend(element);
   }
+};
+//function to escape xss injections
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };

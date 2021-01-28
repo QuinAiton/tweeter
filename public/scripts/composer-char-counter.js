@@ -4,8 +4,12 @@ $(document).ready(function () {
     this.counter.value = 140 - count;
     if (this.counter.value < 0) {
       $("form, .counter").addClass("red");
+      $("#errorMessage").removeClass("hide");
+      $("#errorMessage").addClass("error");
     } else {
       $("form, .counter").removeClass("red");
+      $("#errorMessage").removeClass("error");
+      $("#errorMessage").addClass("hide");
     }
   });
 });

@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link
@@ -23,11 +24,11 @@
       rel="stylesheet"
     />
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/add-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -64,11 +65,11 @@
     <main class="container">
       <section class="add-tweet">
         <h4 id="errorMessage" class="hide"">
-          <i class="fas fa-exclamation"></i> Maximum text length reached. please
+          <i class="fas fa-exclamation"></i> Maximum text length reached. Please
           reduce the tweet to 140 characters
           <i class="fas fa-exclamation"></i>
         </h4>
-        <h2>Compose Tweet</h2>
+        <h2>Compose a Tweet</h2>
         <hr />
         <form action="/tweets" method="POST">
           <label for="tweet-text"></label>

@@ -2,13 +2,14 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   height: 120px;
   background-color: #0d335d;
   color: #fff;
   padding: 1.5em;
+  z-index: 1;
 }
 
 nav span {

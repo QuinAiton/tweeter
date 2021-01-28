@@ -1,5 +1,6 @@
 .add-tweet h2 {
   text-align: center;
+  margin-bottom: 0;
 }
 .add-tweet form {
   display: flex;
@@ -12,7 +13,7 @@
   margin: 0.5em;
 }
 
-.add-tweet form textarea {
+.add-tweet form #tweet-text {
   border: 5px solid black;
   border-style: none none solid none;
   background-color: #f8f1f1;
@@ -23,7 +24,7 @@
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
-.add-tweet form textarea:focus {
+.add-tweet form #tweet-text:focus {
   outline: none;
 }
 
@@ -39,6 +40,7 @@
 
 .add-tweet hr {
   width: 30%;
+  margin-bottom: 50px;
 }
 .hide {
   visibility: hidden;

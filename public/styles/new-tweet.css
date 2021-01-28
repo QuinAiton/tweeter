@@ -5,6 +5,7 @@
   border-radius: 15px;
   margin: 1em;
   padding: 0.5em;
+  overflow-wrap: break-word;
 }
 #tweets-container .header {
   display: flex;
@@ -17,7 +18,7 @@
   align-items: center;
 }
 #tweets-container article:hover {
-  box-shadow: 1px 2px 4px 1px;
+  box-shadow: 1px 2px 10px 1px;
   color: #000;
 }
 

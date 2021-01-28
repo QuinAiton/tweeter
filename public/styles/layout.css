@@ -33,3 +33,36 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+/* media queris */
+@media (min-width: 768px) {
+  body nav {
+    display: flex;
+  }
+  #main-header {
+    margin-top: 60px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  #main-header {
+    width: 20%;
+    height: 100%;
+    padding-top: 100px;
+    justify-content: flex-start;
+    position: fixed;
+  }
+
+  .container {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 0;
+  }
+}

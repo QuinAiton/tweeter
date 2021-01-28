@@ -40,7 +40,18 @@
 .add-tweet hr {
   width: 30%;
 }
+.hide {
+  visibility: hidden;
+}
+
+.error {
+  visibility: visible;
+  padding: 10px;
+  background-color: #f50b0b7c;
+  border-radius: 10px;
+  text-align: center;
+}
 
 .red {
-  color: red;
+  color: #ff0000;
 }

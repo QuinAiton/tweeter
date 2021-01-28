@@ -63,6 +63,11 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="add-tweet">
+        <h4 id="errorMessage" class="hide"">
+          <i class="fas fa-exclamation"></i> Maximum text length reached. please
+          reduce the tweet to 140 characters
+          <i class="fas fa-exclamation"></i>
+        </h4>
         <h2>Compose Tweet</h2>
         <hr />
         <form action="/tweets" method="POST">

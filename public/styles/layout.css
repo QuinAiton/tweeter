@@ -35,6 +35,7 @@ main {
  */
 
 /* media queris */
+
 @media (min-width: 768px) {
   body nav {
     display: flex;
@@ -43,9 +44,13 @@ main {
     margin-top: 60px;
     height: 400px;
   }
+  .hideTweet {
+    display: none;
+    padding-top: 50px;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1245px) {
   body {
     display: flex;
     flex-direction: row;

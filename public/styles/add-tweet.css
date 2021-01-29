@@ -57,3 +57,15 @@
 .red {
   color: #ff0000;
 }
+
+.hideTweet {
+  display: none;
+  padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .hideTweet {
+    display: flex;
+    flex-direction: column;
+  }
+}

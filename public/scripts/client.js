@@ -68,7 +68,7 @@ const createTweetElement = function (tweet) {
   </p>
 </header>
 <footer>
-  <span>${tweet.created_at}</span>
+  <span>${moment(tweet.created_at).fromNow()}</span>
   <div>
     <i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>

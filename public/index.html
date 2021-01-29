@@ -40,6 +40,7 @@
       src="/scripts/composer-char-counter.js"
     ></script>
     <script type="text/javascript" src="/scripts/moment.js"></script>
+    <script type="text/javascript" src="/scripts/tweetToggle.js"></script>
   </head>
 
   <body>
@@ -47,7 +48,7 @@
     <nav>
       <span>tweeter</span>
       <div>
-        <a href="#head"><p><span>Write</span> a new tweet</p></a>
+        <a id="tweetToggle" href="#"><p><span>Write</span> a new tweet</p></a>
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
@@ -64,7 +65,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="add-tweet">
+      <section class="add-tweet hideTweet">
         <h4 id="errorMessage" class="hide"">
           <i class="fas fa-exclamation"></i> Maximum text length reached. Please
           reduce the tweet to 140 characters

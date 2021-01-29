@@ -39,6 +39,7 @@
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
     ></script>
+    <script type="text/javascript" src="/scripts/moment.js"></script>
   </head>
 
   <body>
@@ -46,7 +47,7 @@
     <nav>
       <span>tweeter</span>
       <div>
-        <p><span>Write</span> a new tweet</p>
+        <a href="#head"><p><span>Write</span> a new tweet</p></a>
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
@@ -69,7 +70,7 @@
           reduce the tweet to 140 characters
           <i class="fas fa-exclamation"></i>
         </h4>
-        <h2>Compose a Tweet</h2>
+        <h2 id="head">Compose a Tweet</h2>
         <hr />
         <form action="/tweets" method="POST">
           <label for="tweet-text"></label>
